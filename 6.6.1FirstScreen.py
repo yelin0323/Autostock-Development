@@ -26,7 +26,7 @@ plt.title('Triple Screen Trading - First Screen (NCSOFT)')
 plt.grid(True)
 candlestick_ohlc(p1, ohlc.values, width=.6, colorup='red', colordown='blue')  # OHLC 값을 이용하여 캔들차트를 그린다.
 p1.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m'))
-plt.plot(df.number, df['ema130'], color='c', label='EMA130')
+plt.plot(df.number, df['ema130'], color='c', label='EMA130') #130일 이동평균선을 그린다.
 plt.legend(loc='best')
 
 p2 = plt.subplot(2, 1, 2)
