@@ -27,4 +27,4 @@ class MarketDB:
         df.index = df['date']
         return df
 
-    def get
+    
