@@ -42,3 +42,7 @@ plt.plot(df.number, df['slow_d'], color='k', label='%D')
 plt.yticks([10,20,80,100])
 plt.legend(loc='best')
 plt.show()
+
+#아래의 그래프는 스토캐스틱 그래프를 표시하고 있다.
+#스토캐스틱에는 빠른선인 %K와 느린 선인 %D가 있다. 
+#%K 대싱 느린 %D를 사용할 경우 더 적은 신호로 만들어내기 때문에 그만큼 더 확실한 신호로 볼 수 있다.
