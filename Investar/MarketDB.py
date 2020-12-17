@@ -20,9 +20,11 @@ class MarketDB:
         for idx in range(len(companyInfo)):
             self.codes[companyInfo['code'].values[idx]] = companyInfo['company'].values[idx]
 
-    def getDailyPrice(self, code, startDate, endDate):
+    def get_Daily_Price(self, code, startDate, endDate):
         """daily_price 테이블에서 읽어와서 데이터프레임으로 반환"""
         sql = "SELECT * FROM daily_price WHERE code = '{}' and date >= '{}' and date <= '{}'".format(code, startDate, endDate)
         df = pd.read_sql(sql, self.conn)
         df.index = df['date']
         return df
+
+    def get
