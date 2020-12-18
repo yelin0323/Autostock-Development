@@ -149,5 +149,5 @@ class DualMomentum:
         return
 
 dm = DualMomentum()
-rm = dm.get_rltv_momentum('2020-01-01','2020-12-17', 100)
-dm.get_abs_momentum(rm, '2020-01-01','2020-12-17')
+rm = dm.get_rltv_momentum('2020-07-15','2019-10-15', 10)
+dm.get_abs_momentum(rm, '2020-10-15','2020-12-17')
