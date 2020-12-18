@@ -135,7 +135,6 @@ class DualMomentum:
             rows.append([code, self.mk.codes[code], old_price, new_price,
                 returns])
 
-
         # 절대 모멘텀 데이터프레임을 생성한 후 수익률순으로 출력
         df = pd.DataFrame(rows, columns=columns)
         df = df[['code', 'company', 'old_price', 'new_price', 'returns']]
@@ -149,5 +148,5 @@ class DualMomentum:
         return
 
 dm = DualMomentum()
-rm = dm.get_rltv_momentum('2020-07-15','2019-10-15', 10)
-dm.get_abs_momentum(rm, '2020-10-15','2020-12-17')
+rm = dm.get_rltv_momentum('2020-03-15','2020-8-15', 10)
+dm.get_abs_momentum(rm, '2020-8-15','2020-12-17')
